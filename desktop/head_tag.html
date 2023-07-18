@@ -63,7 +63,7 @@ api.modifyClass("controller:composer", {
   pluginId: 'composer-crud-operations', 
   actions: {
     badgeGet() {
-      this.get("toolbarEvent").addText('[wrap="badge-post"][/wrap]');
+      this.get("toolbarEvent").addText('[wrap="badge-get"][/wrap]');
     },
     badgePost() {
       this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'post_text');
