@@ -77,13 +77,16 @@ api.modifyClass("controller:composer", {
   }
 });
 
-toolbar.addButton({
-  id: "crud_options",
-  group: "crud",
-  icon: "cog",
-  title: "composer.crud_options",
-  popupMenu: true
+api.onToolbarCreate(toolbar => {
+  toolbar.addButton({
+    id: "crud_options",
+    group: "crud",
+    icon: "cog",
+    title: "composer.crud_options",
+    popupMenu: true
+  });
 });
+
 
 // TEXTS
 let translations = I18n.translations[I18n.currentLocale()].js;
