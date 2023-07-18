@@ -15,7 +15,7 @@ api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgeGet",
       icon: "cloud",
-      label: "GET",
+      label: themePrefix('get_text'),
       title: "GET",
       group: "crud"
   };
@@ -25,7 +25,7 @@ api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgePost",
       icon: "cloud",
-      label: "POST",
+      label: themePrefix('post_text'),
       title: "POST",
       group: "crud"
   };
@@ -35,7 +35,7 @@ api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgePut",
       icon: "cloud",
-      label: "PUT",
+      label: themePrefix('put_text'),
       title: "PUT",
       group: "crud"
   };
@@ -45,8 +45,7 @@ api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgePatch",
       icon: "cloud",
-      label: "PATCH",
-      title: "PATCH",
+      label: themePrefix('patch_text'),
       group: "crud"
   };
 });
@@ -55,8 +54,7 @@ api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgeDelete",
       icon: "cloud",
-      label: "DELETE",
-      title: "DELETE",
+      label: themePrefix('delete_text'),
       group: "crud"
   };
 });
