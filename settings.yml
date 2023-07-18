@@ -2,7 +2,26 @@ align_center_text:
   default: "Centered Text"
   description:
     en: Enter the placeholder text that appears in the composer after the user clicks the button.
-
+get_text:
+  default: ""
+  description:
+    en: Enter the label for get.
+post_text:
+  default: ""
+  description:
+    en: Enter the label for get.
+put_text:
+  default: ""
+  description:
+    en: Enter the label for get.
+patch_text:
+  default: ""
+  description:
+    en: Enter the label for get.
+delete_text:
+  default: ""
+  description:
+    en: Enter the placeholder text that appears in the composer after the user clicks the button.
 Svg_icons: 
   type: 'list'
   list_type: 'compact'
