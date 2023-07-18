@@ -80,16 +80,6 @@ api.modifyClass("controller:composer", {
   }
 });
 
-api.onToolbarCreate(toolbar => {
-  toolbar.addButton({
-      id: "operations",
-      group: "crud",
-      icon: "cloud",
-      title: "composer.operations",
-      popupMenu: true
-    });
-});
-
 // TEXTS
 let translations = I18n.translations[I18n.currentLocale()].js;
 if (!translations) {
