@@ -1,0 +1,83 @@
+[data-wrap="center"] {
+  text-align: center;
+}
+
+[data-wrap="badge-post"].d-wrap:after {
+  display: inline-block;
+  padding: 0px 7px 0px;
+  font-size: 75%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #ffffff;   
+  background-color: #238636;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  content: "POST";
+}
+
+
+[data-wrap="badge-get"].d-wrap:after  {
+  display: inline-block;
+  padding: 0px 7px 0px;
+  font-size: 75%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #ffffff;   
+  background-color: #0033a1;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  content: "GET";
+}
+
+[data-wrap="badge-delete"].d-wrap:after  {
+  display: inline-block;
+  padding: 0px 7px 0px;
+  font-size: 75%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #ffffff;   
+  background-color: #fa383e;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  content: "DELETE";
+}
+
+[data-wrap="badge-patch"].d-wrap:after  {
+  display: inline-block;
+  padding: 0px 7px 0px;
+  font-size: 75%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #ffffff;   
+  background-color: #ffba00;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  content: "PATCH";
+}
+
+[data-wrap="badge-put"].d-wrap:after  {
+  display: inline-block;
+  padding: 0px 7px 0px;
+  font-size: 75%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #ffffff;   
+  background-color: #54c7ec;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  content: "PUT";
+}
+
+[data-wrap="payload"] {
+  color: rgba(255,0,0,.6);
+  content: "required";
+  font-size: 15px;
+  padding: 5px;
+  position: relative;
+  top: 1px;
+}
