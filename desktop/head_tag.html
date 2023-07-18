@@ -65,19 +65,19 @@ api.modifyClass("controller:composer", {
   pluginId: 'composer-crud-operations', 
   actions: {
     badgeGet() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'get_text');
+      this.get("toolbarEvent").applySurround('[wrap="badge-get"]\n', '\n[/wrap]', 'get_text');
     },
     badgePost() {
       this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'post_text');
     },
     badgePut() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'put_text');
+      this.get("toolbarEvent").applySurround('[wrap="badge-put"]\n', '\n[/wrap]', 'put_text');
     },
     badgePatch() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'patch_text');
+      this.get("toolbarEvent").applySurround('[wrap="badge-patch"]\n', '\n[/wrap]', 'patch_text');
     },
     badgeDelete() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'delete_text');
+      this.get("toolbarEvent").applySurround('[wrap="badge-delete"]\n', '\n[/wrap]', 'delete_text');
     }
   }
 });
