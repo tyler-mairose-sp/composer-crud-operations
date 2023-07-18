@@ -14,7 +14,7 @@ api.onToolbarCreate(toolbar => {
 api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgeGet",
-      icon: "blue_circle",
+      icon: "cloud",
       label: "GET",
       group: "crud"
   };
@@ -23,7 +23,7 @@ api.addToolbarPopupMenuOptionsCallback(() => {
 api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgePost",
-      icon: "green_circle",
+      icon: "cloud",
       label: "POST",
       group: "crud"
   };
@@ -32,7 +32,7 @@ api.addToolbarPopupMenuOptionsCallback(() => {
 api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgePut",
-      icon: "purple_circle",
+      icon: "cloud",
       label: "PUT",
       group: "crud"
   };
@@ -41,7 +41,7 @@ api.addToolbarPopupMenuOptionsCallback(() => {
 api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgePatch",
-      icon: "yellow_circle",
+      icon: "cloud",
       label: "PATCH",
       group: "crud"
   };
@@ -50,7 +50,7 @@ api.addToolbarPopupMenuOptionsCallback(() => {
 api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgeDelete",
-      icon: "red_circle",
+      icon: "cloud",
       label: "DELETE",
       group: "crud"
   };
@@ -60,19 +60,19 @@ api.modifyClass("controller:composer", {
   pluginId: 'composer-crud-operations', 
   actions: {
     badgeGet() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'get');
     },
     badgePost() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'post');
     },
     badgePut() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'put');
     },
     badgePatch() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'patch');
     },
     badgeDelete() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'delete');
     }
   }
 });
@@ -97,6 +97,13 @@ if (!translations.composer) {
 translations.composer.align_center_button_title = settings.align_center_button;
 translations.composer.align_center_text =
   settings.align_center_text;
+
+  translations.composer.get = "GET";
+  translations.composer.post = "POST";
+  translations.composer.put = "PUT";
+  translations.composer.patch = "PATCH";
+  translations.composer.delete = "DELETE";
+
 
 
 </script>

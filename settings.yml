@@ -6,6 +6,6 @@ align_center_text:
 Svg_icons: 
   type: 'list'
   list_type: 'compact'
-  default: 'fa-align-center|fa-align-right|fa-align-justify|fa-strikethrough|fa-underline|fa-indent|fa-columns|fa-superscript|fa-subscript'
+  default: 'fa-align-center|fa-cloud|fa-align-right|fa-align-justify|fa-strikethrough|fa-underline|fa-indent|fa-columns|fa-superscript|fa-subscript'
   description: 
     en: "Include FontAwesome 5 icon classes for each icon used in the list."
