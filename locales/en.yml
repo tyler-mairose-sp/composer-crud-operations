@@ -1,0 +1,6 @@
+en:
+  get_text: "GET"
+  post_text: "POST"
+  put_text: "PUT"
+  patch_text: "PATCH"
+  delete_text: "DELETE"
