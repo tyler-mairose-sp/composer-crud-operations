@@ -1,3 +1,8 @@
+align_center_text:
+  default: "Centered Text"
+  description:
+    en: Enter the placeholder text that appears in the composer after the user clicks the button.
+
 Svg_icons: 
   type: 'list'
   list_type: 'compact'
