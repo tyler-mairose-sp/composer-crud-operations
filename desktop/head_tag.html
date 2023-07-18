@@ -60,19 +60,19 @@ api.modifyClass("controller:composer", {
   pluginId: 'composer-crud-operations', 
   actions: {
     badgeGet() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'get');
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'GET');
     },
     badgePost() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'post');
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'POST');
     },
     badgePut() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'put');
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'PUT');
     },
     badgePatch() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'patch');
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'PATCH');
     },
     badgeDelete() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'delete');
+      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', 'DELETE');
     }
   }
 });
@@ -98,11 +98,11 @@ translations.composer.align_center_button_title = settings.align_center_button;
 translations.composer.align_center_text =
   settings.align_center_text;
 
-  translations.composer.get = "GET";
-  translations.composer.post = "POST";
-  translations.composer.put = "PUT";
-  translations.composer.patch = "PATCH";
-  translations.composer.delete = "DELETE";
+  translations.composer.GET = "GET";
+  translations.composer.POST = "POST";
+  translations.composer.PUT = "PUT";
+  translations.composer.PATCH = "PATCH";
+  translations.composer.DELETE = "DELETE";
 
 
 
