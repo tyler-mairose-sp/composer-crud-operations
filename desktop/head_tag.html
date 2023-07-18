@@ -1,6 +1,7 @@
 <script type="text/discourse-plugin" version="0.8">
 const { iconNode } = require("discourse-common/lib/icon-library");
 // TOOLBAR
+
 api.onToolbarCreate(toolbar => {
     toolbar.addButton({
         id: "align_center_button",
@@ -10,79 +11,5 @@ api.onToolbarCreate(toolbar => {
     });
 });
 
-
-api.addToolbarPopupMenuOptionsCallback(() => {
-  return {
-      action: "badgeGet",
-      icon: "blue_circle",
-      label: "GET",
-      group: "crud"
-  };
-});
-
-api.addToolbarPopupMenuOptionsCallback(() => {
-  return {
-      action: "badgePost",
-      icon: "green_circle",
-      label: "POST",
-      group: "crud"
-  };
-});
-
-api.addToolbarPopupMenuOptionsCallback(() => {
-  return {
-      action: "badgePut",
-      icon: "purple_circle",
-      label: "PUT",
-      group: "crud"
-  };
-});
-
-api.addToolbarPopupMenuOptionsCallback(() => {
-  return {
-      action: "badgePatch",
-      icon: "yellow_circle",
-      label: "PATCH",
-      group: "crud"
-  };
-});
-
-api.addToolbarPopupMenuOptionsCallback(() => {
-  return {
-      action: "badgeDelete",
-      icon: "red_circle",
-      label: "DELETE",
-      group: "crud"
-  };
-});
-
-api.modifyClass("controller:composer", {
-  pluginId: 'composer-crud-operations', 
-  actions: {
-    badgeGet() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
-    },
-    badgePost() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
-    },
-    badgePut() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
-    },
-    badgePatch() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
-    },
-    badgeDelete() {
-      this.get("toolbarEvent").applySurround('[wrap="badge-post"]\n', '\n[/wrap]', "");
-    }
-  }
-});
-
-toolbar.addButton({
-  id: "crud_options",
-  group: "crud",
-  icon: "cog",
-  title: "composer.crud_options",
-  popupMenu: true,
-});
 
 </script>
