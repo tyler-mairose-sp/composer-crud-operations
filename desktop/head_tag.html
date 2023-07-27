@@ -11,6 +11,15 @@ api.onToolbarCreate(toolbar => {
   });
 });
 
+api.onToolbarCreate(toolbar => {
+  toolbar.addButton({
+      id: "hidden_button",
+      group: "extras",
+      icon: "eye-slash",
+      perform: e => e.applySurround('[wrap="hidden"]\n', '\n[/wrap]', 'hidden_text')
+  });
+});
+
 api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgeGet",
@@ -92,5 +101,9 @@ if (!translations.composer) {
 translations.composer.align_center_button_title = settings.align_center_button;
 translations.composer.align_center_text =
   settings.align_center_text;
+
+translations.composer.hidden_button_title = settings.hidden_button;
+translations.composer.hidden_text =
+  settings.hidden_text;
   
 </script>
