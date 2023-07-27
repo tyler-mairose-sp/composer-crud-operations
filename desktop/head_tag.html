@@ -11,6 +11,17 @@ api.onToolbarCreate(toolbar => {
   });
 });
 
+api.onToolbarCreate(toolbar => {
+  toolbar.addButton({
+      id: "new_dropdown",
+      group: "extras",
+      icon: "cog",
+      popupMenu: true,
+      title: "dropdown.options"
+      perform: e => e.applySurround('[wrap="center"]\n', '\n[/wrap]', 'align_center_text')
+  });
+});
+
 api.addToolbarPopupMenuOptionsCallback(() => {
   return {
       action: "badgeGet",
